@@ -166,6 +166,14 @@ Do we ship, revise, or defer?
 
 Use explicit language so Codex knows you want visible staged studio work.
 
+Best starting prompt:
+
+```text
+Run /start using the Codex development studio.
+Do not assume my stage.
+Ask where I am and route me to the right workflow.
+```
+
 Good prompt:
 
 ```text
@@ -174,6 +182,9 @@ Run Tier 1 only. Use product-lead.
 Create a run log and a product brief.
 Do not implement code until I approve the brief.
 ```
+
+Use direct Tier prompts only when you already know the current stage. Otherwise,
+start with `/start`.
 
 Good prompt for the next stage:
 
@@ -256,4 +267,3 @@ The benefit of the studio is not that it sounds like a company. The benefit is:
 
 If those benefits are not visible in the files, the studio is not being used
 correctly.
-

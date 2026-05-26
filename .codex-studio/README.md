@@ -51,6 +51,14 @@ large enough to benefit from independent work.
 - `workflows/create-content-page.md`: create SEO-friendly brawler/map/guide pages
 - `workflows/review-release.md`: check quality before shipping
 
+## Commands
+
+- `commands/start.md`: ask where the user is and route to the right workflow
+- `commands/brainstorm.md`: explore product ideas from scratch
+- `commands/project-stage-detect.md`: inspect an existing project before acting
+- `commands/build-feature.md`: implement only after approved planning
+- `commands/review-release.md`: run QA and performance gates
+
 ## How To Operate It
 
 Read `USAGE.md` before using the studio on a real project. It defines the
