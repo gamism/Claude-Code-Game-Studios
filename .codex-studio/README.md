@@ -50,3 +50,9 @@ large enough to benefit from independent work.
 - `workflows/build-feature.md`: build a product feature end to end
 - `workflows/create-content-page.md`: create SEO-friendly brawler/map/guide pages
 - `workflows/review-release.md`: check quality before shipping
+
+## How To Operate It
+
+Read `USAGE.md` before using the studio on a real project. It defines the
+required tier flow, run logs, approval gates, and prompts that make each role's
+work visible.
