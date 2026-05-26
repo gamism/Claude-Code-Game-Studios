@@ -29,6 +29,7 @@ preserving the original Claude Code Game Studios files.
 - `.codex-studio/workflows/*.md`
 - `.codex-studio/rules/*.md`
 - `.codex-studio/session-state/active.md`
+- `.codex-studio/workflows/start-project.md`
 
 ## Open Questions
 
@@ -39,7 +40,6 @@ preserving the original Claude Code Game Studios files.
 
 ## Next Suggested Work
 
-- Add a root README section pointing to `.codex-studio/`.
-- Add a reusable prompt for starting multi-agent feature work.
-- Optionally create `.codex-studio/workflows/start-project.md`.
-
+- Add a reusable prompt for starting multi-agent feature work from
+  `workflows/start-project.md`.
+- Decide whether to open a pull request or merge this branch into `main`.

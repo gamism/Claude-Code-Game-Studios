@@ -46,7 +46,7 @@ large enough to benefit from independent work.
 
 ## First Workflows
 
+- `workflows/start-project.md`: start a new website or reboot a project
 - `workflows/build-feature.md`: build a product feature end to end
 - `workflows/create-content-page.md`: create SEO-friendly brawler/map/guide pages
 - `workflows/review-release.md`: check quality before shipping
-
