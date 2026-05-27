@@ -64,3 +64,7 @@ large enough to benefit from independent work.
 Read `USAGE.md` before using the studio on a real project. It defines the
 required tier flow, run logs, approval gates, and prompts that make each role's
 work visible.
+
+The coordinator should also follow `orchestrator.md`. That file defines the
+automatic state machine: how `/start` routes work, when product-lead review is
+mandatory, when to continue to the next tier, and when to stop for user approval.

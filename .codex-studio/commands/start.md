@@ -3,6 +3,9 @@
 Use this command when the user wants to begin using the development studio but
 has not chosen a workflow yet.
 
+Read `../orchestrator.md` before acting. `/start` is the entry point into the
+orchestrator state machine.
+
 Do not assume the project stage. Ask where the user is, then route them to the
 right workflow.
 
@@ -99,4 +102,3 @@ Do not rewrite or implement before reporting findings.
 workflow.
 
 It should not produce final product artifacts by itself.
-

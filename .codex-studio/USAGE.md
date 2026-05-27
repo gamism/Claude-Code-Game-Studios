@@ -13,9 +13,14 @@ Do not treat the agent files as decoration. Treat them as an operating process:
 
 The coordinator is not the whole studio.
 
+The user is also not the project manager. The coordinator must follow
+`orchestrator.md` to decide the next stage automatically whenever the user says
+`/start`, `next`, or `Continue the studio workflow`.
+
 The coordinator should:
 
 - read the user's request
+- read existing studio artifacts
 - choose the correct workflow
 - call the right role at the right time
 - keep the project moving
@@ -34,6 +39,7 @@ Each role should:
 - `workflows/`: ordered procedures for common project work
 - `rules/`: quality gates and domain constraints
 - `session-state/active.md`: current project memory
+- `orchestrator.md`: automatic stage detection and handoff rules
 - `studio-runs/`: recommended folder for visible role run logs
 
 If `studio-runs/` does not exist in the target project, create it under that
@@ -65,6 +71,9 @@ The run log should include:
 Without this file, the studio is not auditable.
 
 ## Standard Tier Flow
+
+The coordinator should not require the user to remember this flow. This section
+explains the process; `orchestrator.md` is the rulebook the coordinator follows.
 
 ### Tier 1: Product
 
@@ -120,6 +129,25 @@ Do you approve these implementation briefs?
 
 Do not start frontend implementation before Tier 2 is approved.
 
+### Product Gate: Tier 2 Review
+
+Role:
+
+- `product-lead`
+
+Purpose:
+
+- review Tier 2 decisions before implementation
+- catch scope creep
+- approve or block Tier 3
+
+Artifacts:
+
+- `docs/product-lead-review.md`
+- `docs/studio-runs/YYYY-MM-DD-product-lead-tier-2-review.md`
+
+This gate is mandatory. The user should not need to ask for it.
+
 ### Tier 3: Implementation
 
 Roles:
@@ -169,10 +197,17 @@ Use explicit language so Codex knows you want visible staged studio work.
 Best starting prompt:
 
 ```text
-Run /start using the Codex development studio.
-Do not assume my stage.
-Ask where I am and route me to the right workflow.
+/start
 ```
+
+Continuation prompt:
+
+```text
+Continue the studio workflow.
+```
+
+The coordinator should inspect existing artifacts and proceed to the next state
+without asking the user to name the tier or role.
 
 Good prompt:
 
